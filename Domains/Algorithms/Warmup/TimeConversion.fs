@@ -9,5 +9,7 @@ let main args =
     if hour = 12 && timeDay.Equals("AM") then
         printfn "%s:%s:%s" "00" timeArray.[1] (timeArray.[2].Substring(0,2))
     else if hour <> 12 && timeDay.Equals("PM") then
-        printfn "%d:%s:%s" (hour + 12) timeArray.[1] (timeArray.[2].Substring(0,2))        
+        printfn "%d:%s:%s" (hour + 12) timeArray.[1] (timeArray.[2].Substring(0,2))  
+    else
+          printfn "%s:%s:%s" timeArray.[0] timeArray.[1] (timeArray.[2].Substring(0,2))
     0
